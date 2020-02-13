@@ -2,22 +2,53 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+.menu {
+  background-color: black;
+  color: white;
+  line-height: 2em
+}
+.menu-toggle {
+  display: flex;
+}
 
 body {
   background: #fcc;
 } 
 
-
-
+nav{
+  display: none;
+  flex-direction: column;
+}
+/*
+.menu:hover + nav, .nav:hover{
+  display: flex;
+  flex-direction: column;
+}
+*/
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
+  .menu {
+    display: none;
+
+  }
+  nav {
+    display: flex;
+    flex-direction: row
+    
+  
+  }
   
   body {
     background: #cfc;
   } 
+  
+  
+  
+
+ 
 }
 
 
@@ -31,4 +62,8 @@ body {
   body {
     background: #ccf;
   } 
+  
+
+
+  
 }
